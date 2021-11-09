@@ -13,13 +13,7 @@ import java.util.HashMap;
 
 @Configuration
 public class MVCConfiguration implements WebMvcConfigurer {
-    @Bean
-    public HashMap<String, Engine> engineMapAdv(){
-        HashMap<String,Engine> engineMap = new HashMap<>();
-        engineMap.put("petrol", new PetrolEngine());
-        engineMap.put("diesel", new DieselEngine());
-        return engineMap;
-    }
+
 
     @Bean
     public ViewResolver viewResolver(ApplicationContext applicationContext){
